@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <from method="get" action="simplefrom.html">
+      <h2>oder from</h2>
+      <p>what would you like to buy?</p>
+<!-- Thêm các phần từ vào from và tạo các tùy chọn seclect..option -->
+      <select>
+          <option value=" ">A</option>
+          <option>B (+0.5$)</option>
+          <option>C (+0.5$)</option>
+      </select>
+      <!-- Tạo radio button -->
+      <p>how many word you like to order?</p>
+      <input type="radio" name="rd/"> - 10$ <br>
+      <input type="radio" name="rd/"> - 20$ <br>
+      <input type="radio" name="rd/"> - 22$ <br>
+      <!-- Tạo textfield -->
+      <p>Name<span style="clor: red">*</span> </p>
+      <input type="text" name="firstname" placeholder="Firstname" size="15" />
+      <input type="text" name="lastname" placeholder="Lastname" />
+      <p>Email</p>
+      <input type="text" name="email" size="35" />
+      <p>Phone Number</p>
+      <input type="text" name="phone1" size="5" /> -
+      <input type="text" name="phone2" size="10" /> -
+      <input type="text" name="phone3" size="5" />
+      <!-- Tạo button -->
+      <p><input type="button" name="btsubmit" value="submit" /></p>
+      <!-- Tạo style về font chữ áp dụng toàn bộ from -->
+      <style>
+          .wufoo{
+              font-family: "Lucaida Grande", "Lucida Sans unicode", Tahoma, sans-serif;
+          }
+      </style>
+      <!-- Sử dụng style vừa tạo ra -->
+      <from method="get" action="simplefrom.html" class="wufoo"></from>
+
+
+
+  </from>
+</body>
+</html>
